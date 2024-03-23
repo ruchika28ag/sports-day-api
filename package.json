@@ -1,0 +1,27 @@
+{
+  "name": "sports-day-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruchika28ag/sports-day-api.git"
+  },
+  "author": "Ruchika Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruchika28ag/sports-day-api/issues"
+  },
+  "homepage": "https://github.com/ruchika28ag/sports-day-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
