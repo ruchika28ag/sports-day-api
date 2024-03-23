@@ -8,7 +8,7 @@ const {
 const router = express.Router()
 
 router.get("/events", fetchAllEvents)
-router.get("/events/:userId", fetchRegisteredEventsOfUser)
-router.post("/events/:userId/:eventId", handleUserActionForEvent)
+router.get("/user/:userId/events", fetchRegisteredEventsOfUser)
+router.post("/user/:userId/events/:eventId", handleUserActionForEvent)
 
 module.exports = router
