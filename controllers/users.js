@@ -1,13 +1,13 @@
 const fs = require("fs")
 
-const users = require("../db/users.json")
-
 const handleSignUp = (req, res) => {
   const { user_id, first_name, last_name } = req.body
   const trimmedUserId = user_id.trim()
 
   if (!trimmedUserId.length)
     return res.status(400).json({ error: "User ID can not be empty." })
+
+  const users = require("../db/users.json")
 
   if (users[trimmedUserId.toLowerCase()]) {
     return res.status(400).json({ error: "User ID already exists" })
@@ -29,7 +29,10 @@ const handleSignUp = (req, res) => {
 
 const handleLogin = (req, res) => {
   const { user_id } = req.body
+
+  const users = require("../db/users.json")
   const user = users[user_id]
+
   if (!user) {
     return res.status(401).json({ error: "Invalid credentials" })
   }

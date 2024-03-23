@@ -1,6 +1,9 @@
 {
   "ruchika": {
-    "sport_events": [],
+    "registered_events": [
+      5,
+      6
+    ],
     "first_name": "",
     "last_name": ""
   }
